@@ -1,0 +1,90 @@
+#staging-area {
+    max-height: 200px;
+    min-height: 175px;
+    background: darkgrey;
+    border: 1px solid black;
+    margin: 2%;
+    padding: 1%;
+    display: flex;
+}
+
+img {
+    max-height: 80%;
+    width: 20%; 
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#staging-area::after {
+    content: ""; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+#battle-area {
+    height: 300px;
+    background: dimgray;
+    margin: 1%;
+    border: 1px solid black;
+    display: flex;
+}
+
+#banner-message {
+    font-size: 20px;
+    color: red;
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+
+}
+
+.container-fluid {
+    max-width: 90%;
+    min-width: 700px;
+}
+
+#fighter-column,#attack-btn-column,#enemy-column {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 33.3%;
+    text-align: center;
+}
+
+#attack-button {
+    margin: 50px auto;
+    display: block;
+}
+
+#attack-stats {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#fighter-container img {
+    height: 200px;
+    width: 75%;
+    /* border: 1px solid black; */
+}
+
+#enemy-container img {
+    height: 200px;
+    width: 75%;
+    /* border: 1px solid black; */
+}
+
+.battle-area-header {
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+#insignia {
+    margin: 50px auto;
+    margin-bottom: 25px;
+    display: block;
+}
+
+#defeated-characters img {
+    margin: 2px;
+}
